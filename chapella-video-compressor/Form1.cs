@@ -16,6 +16,14 @@ namespace chapella_video_compressor
 
             groupBox2.MouseDown += GroupBox2_MouseDown;
             groupBox1.MouseDown += GroupBox1_MouseDown;
+
+            videoToCompressTxt.AutoCompleteMode = AutoCompleteMode.Suggest;
+            videoToCompressTxt.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            videoToCompressTxt.AutoCompleteCustomSource = new AutoCompleteStringCollection();
+
+            videoCompressDestinationFolderTxt.AutoCompleteMode = AutoCompleteMode.Suggest;
+            videoCompressDestinationFolderTxt.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            videoCompressDestinationFolderTxt.AutoCompleteCustomSource = new AutoCompleteStringCollection();
         }
 
         private async void compressVideoBtn_Click(object sender, EventArgs e)

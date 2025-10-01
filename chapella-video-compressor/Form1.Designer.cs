@@ -45,6 +45,8 @@
             // videoToCompressTxt
             // 
             this.videoToCompressTxt.AllowDrop = true;
+            this.videoToCompressTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.videoToCompressTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.videoToCompressTxt.Font = new System.Drawing.Font("Arial Narrow", 10F);
             this.videoToCompressTxt.Location = new System.Drawing.Point(6, 34);
             this.videoToCompressTxt.Name = "videoToCompressTxt";
