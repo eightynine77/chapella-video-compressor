@@ -1,0 +1,9 @@
+# Ignore Visual Studio user / cache folders
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# Ignore build artifacts
+bin/
+obj/
