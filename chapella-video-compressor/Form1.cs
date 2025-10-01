@@ -145,53 +145,62 @@ namespace chapella_video_compressor
             }
         }
 
-        private string _originalText;
+        private string _videoToCompressTxtOGtext = "drag and drop your video file here...";
+        private string _videoCompressDestinationFolderTxtOGtext = "drag and drop your destination folder here...";
         private void videoToCompressTxt_Enter(object sender, EventArgs e)
         {
-            if (_originalText == null)
-                _originalText = videoToCompressTxt.Text;
-
-            videoToCompressTxt.Text = "";
+            if (videoToCompressTxt.Text == _videoToCompressTxtOGtext)
+            {
+                videoToCompressTxt.Text = "";
+            }
         }
 
         private void videoToCompressTxt_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(videoToCompressTxt.Text))
-                videoToCompressTxt.Text = _originalText;
+                videoToCompressTxt.Text = _videoToCompressTxtOGtext;
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            ActiveControl = null;
+            HandleFocusReset();
         }
 
         private void GroupBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            this.ActiveControl = null;
+            HandleFocusReset();
         }
         
         private void GroupBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.ActiveControl = null;
+            HandleFocusReset();
         }
 
         private void videoCompressDestinationFolderTxt_Enter(object sender, EventArgs e)
         {
-            if (_originalText == null)
-                _originalText = videoCompressDestinationFolderTxt.Text;
+            if (videoCompressDestinationFolderTxt.Text == _videoCompressDestinationFolderTxtOGtext)
+            {
+                if (_videoCompressDestinationFolderTxtOGtext == null)
+                    _videoCompressDestinationFolderTxtOGtext = videoCompressDestinationFolderTxt.Text;
 
-            videoCompressDestinationFolderTxt.Text = "";
+                videoCompressDestinationFolderTxt.Text = "";
+            }
         }
 
         private void videoCompressDestinationFolderTxt_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(videoCompressDestinationFolderTxt.Text))
-                videoCompressDestinationFolderTxt.Text = _originalText;
+                videoCompressDestinationFolderTxt.Text = _videoCompressDestinationFolderTxtOGtext;
         }
 
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);
+            ActiveControl = null;
+        }
+
+        private void HandleFocusReset()
+        {
             ActiveControl = null;
         }
 

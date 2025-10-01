@@ -49,7 +49,7 @@
             this.videoToCompressTxt.Location = new System.Drawing.Point(6, 34);
             this.videoToCompressTxt.Name = "videoToCompressTxt";
             this.videoToCompressTxt.Size = new System.Drawing.Size(402, 23);
-            this.videoToCompressTxt.TabIndex = 0;
+            this.videoToCompressTxt.TabIndex = 1;
             this.videoToCompressTxt.Text = "drag and drop your video file here...";
             this.videoToCompressTxt.DragDrop += new System.Windows.Forms.DragEventHandler(this.videoToCompressTxt_DragDrop);
             this.videoToCompressTxt.DragEnter += new System.Windows.Forms.DragEventHandler(this.videoToCompressTxt_DragEnter);
@@ -63,8 +63,8 @@
             this.videoCompressDestinationFolderTxt.Location = new System.Drawing.Point(6, 34);
             this.videoCompressDestinationFolderTxt.Name = "videoCompressDestinationFolderTxt";
             this.videoCompressDestinationFolderTxt.Size = new System.Drawing.Size(402, 23);
-            this.videoCompressDestinationFolderTxt.TabIndex = 1;
-            this.videoCompressDestinationFolderTxt.Text = "drag and drop your video file here...";
+            this.videoCompressDestinationFolderTxt.TabIndex = 3;
+            this.videoCompressDestinationFolderTxt.Text = "drag and drop your destination folder here...";
             this.videoCompressDestinationFolderTxt.DragDrop += new System.Windows.Forms.DragEventHandler(this.videoCompressDestinationFolderTxt_DragDrop);
             this.videoCompressDestinationFolderTxt.DragEnter += new System.Windows.Forms.DragEventHandler(this.videoCompressDestinationFolderTxt_DragEnter);
             this.videoCompressDestinationFolderTxt.Enter += new System.EventHandler(this.videoCompressDestinationFolderTxt_Enter);
@@ -78,7 +78,7 @@
             this.groupBox1.Location = new System.Drawing.Point(20, 152);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(434, 114);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "destination folder";
             // 
@@ -92,7 +92,7 @@
             this.destinationFolderBtn.Location = new System.Drawing.Point(350, 63);
             this.destinationFolderBtn.Name = "destinationFolderBtn";
             this.destinationFolderBtn.Size = new System.Drawing.Size(58, 29);
-            this.destinationFolderBtn.TabIndex = 2;
+            this.destinationFolderBtn.TabIndex = 4;
             this.destinationFolderBtn.UseVisualStyleBackColor = false;
             this.destinationFolderBtn.Click += new System.EventHandler(this.destinationFolderBtn_Click);
             // 
@@ -104,7 +104,7 @@
             this.groupBox2.Location = new System.Drawing.Point(20, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(434, 114);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "video to compress";
             // 
@@ -118,7 +118,7 @@
             this.videoToCompressDirBtn.Location = new System.Drawing.Point(350, 63);
             this.videoToCompressDirBtn.Name = "videoToCompressDirBtn";
             this.videoToCompressDirBtn.Size = new System.Drawing.Size(58, 29);
-            this.videoToCompressDirBtn.TabIndex = 1;
+            this.videoToCompressDirBtn.TabIndex = 2;
             this.videoToCompressDirBtn.UseVisualStyleBackColor = false;
             this.videoToCompressDirBtn.Click += new System.EventHandler(this.videoToCompressDirBtn_Click);
             // 
@@ -128,7 +128,7 @@
             this.compressVideoBtn.Location = new System.Drawing.Point(127, 278);
             this.compressVideoBtn.Name = "compressVideoBtn";
             this.compressVideoBtn.Size = new System.Drawing.Size(221, 43);
-            this.compressVideoBtn.TabIndex = 4;
+            this.compressVideoBtn.TabIndex = 5;
             this.compressVideoBtn.Text = "COMPRES VIDEO";
             this.compressVideoBtn.UseVisualStyleBackColor = true;
             this.compressVideoBtn.Click += new System.EventHandler(this.compressVideoBtn_Click);
@@ -141,7 +141,7 @@
             this.videoCompressionProgressTxt.Name = "videoCompressionProgressTxt";
             this.videoCompressionProgressTxt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.videoCompressionProgressTxt.Size = new System.Drawing.Size(402, 79);
-            this.videoCompressionProgressTxt.TabIndex = 3;
+            this.videoCompressionProgressTxt.TabIndex = 6;
             // 
             // label1
             // 
@@ -150,7 +150,7 @@
             this.label1.Location = new System.Drawing.Point(23, 338);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 17);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 7;
             this.label1.Text = "video compression progress";
             // 
             // Form1
